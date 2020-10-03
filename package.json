@@ -1,0 +1,41 @@
+{
+  "name": "angulaire-next-starter",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Next.js",
+  "license": "MIT",
+  "version": "0.1.0",
+  "author": "@arnaudjnn",
+  "scripts": {
+    "dev": "next-translate && next dev",
+    "build": "next-translate && next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "yarn build && yarn export",
+    "forestry-preview": "next -p 8080 -H 0.0.0.0"
+  },
+  "dependencies": {
+    "@artsy/fresnel": "^1.2.2",
+    "@chakra-ui/core": "^1.0.0-rc.5",
+    "@chakra-ui/system": "^1.0.0-next.3",
+    "focus-visible": "^5.1.0",
+    "gray-matter": "^4.0.2",
+    "next": "latest",
+    "next-seo": "^4.7.1",
+    "next-translate": "^0.17.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-hook-form": "^6.0.4",
+    "react-icons": "^3.10.0",
+    "react-markdown": "^4.1.0",
+    "react-select": "^3.1.0",
+    "reading-time": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "next-sitemap": "^1.2.4",
+    "typescript": "^3.9.6"
+  }
+}

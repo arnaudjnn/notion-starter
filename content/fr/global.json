@@ -1,0 +1,66 @@
+{
+  "header": {
+    "links": [
+      {
+        "text": "Accueil",
+        "url": "/",
+        "targetBlank": false
+      },
+      {
+        "text": "Blog",
+        "url": "/blog",
+        "targetBlank": false
+      },
+      {
+        "text": "Contactez-nous",
+        "url": "/contact",
+        "targetBlank": false
+      }
+    ]
+  },
+  "footer": {
+    "headline": "French lorem ipsum dolor sit amet, consectetur adipiscing elit. A faucibus eget vel laoreet. Neque gravida velit felis odio id mauris. In sed turpis id felis augue quisque purus. Integer vulputate eget adipiscing purus.",
+    "categories": [
+      {
+        "title": "Services",
+        "links": [
+          {
+            "text": "Accueil",
+            "url": "/",
+            "targetBlank": false
+          },
+          {
+            "text": "Blog",
+            "url": "/blog",
+            "targetBlank": false
+          },
+          {
+            "text": "Contactez-nous",
+            "url": "/contact",
+            "targetBlank": false
+          }
+        ]
+      },
+      {
+        "title": "Autres Services",
+        "links": [
+          {
+            "text": "Autre Accueil",
+            "url": "/home",
+            "targetBlank": false
+          },
+          {
+            "text": "Autre Blog",
+            "url": "/blog",
+            "targetBlank": false
+          },
+          {
+            "text": "Autre Contactez-nous",
+            "url": "/contact",
+            "targetBlank": false
+          }
+        ]
+      }
+    ]
+  }
+}

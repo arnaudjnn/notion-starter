@@ -1,0 +1,73 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: "/admin"
+webhook_url: ''
+sections:
+- type: heading
+  label: Français
+- type: directory
+  path: content/fr/articles
+  label: Articles
+  create: documents
+  match: "**/*"
+  templates:
+  - blog
+- type: directory
+  path: content/fr
+  label: Pages
+  create: documents
+  match: "**/*"
+  exclude: "{/articles, /common.json, /global.json, /blog.json}"
+  new_doc_ext: json
+  templates:
+  - page
+- type: document
+  path: content/fr/global.json
+  label: Global
+- type: heading
+  label: English
+- type: directory
+  path: content/en/articles
+  label: Articles
+  create: documents
+  match: "**/*"
+  templates:
+  - blog
+- type: directory
+  path: content/en
+  label: Pages
+  create: documents
+  match: "**/*"
+  exclude: "{content/en/global.json, content/en/common.json}"
+  new_doc_ext: json
+  templates:
+  - page
+- type: document
+  path: content/en/global.json
+  label: Global
+- type: heading
+  label: Config
+- type: document
+  path: siteconfig.json
+  label: Site Config
+- type: directory
+  path: content/authors
+  label: Authors
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - author
+upload_dir: ''
+public_path: ''
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_output_directory: ".next"
+  install_dependencies_command: yarn install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: yarn forestry-preview

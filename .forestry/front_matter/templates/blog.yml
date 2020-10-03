@@ -1,0 +1,50 @@
+---
+label: Article
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- name: description
+  type: text
+  config:
+    required: true
+    max: 170
+  label: Description
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+  default: now
+- type: file
+  name: coverImage
+  label: Cover Image
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Tech
+    - Design
+    - Sales
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+- name: author
+  type: select
+  default: []
+  config:
+    required: true
+    options: []
+    source:
+      type: pages
+      section: authors
+  label: Author

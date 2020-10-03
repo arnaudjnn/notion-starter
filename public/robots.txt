@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+Host: https://example.com
+Sitemap: https://example.com/sitemap.xml

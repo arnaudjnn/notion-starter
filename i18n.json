@@ -1,0 +1,12 @@
+{
+  "allLanguages": ["fr", "en"],
+  "defaultLanguage": "fr",
+  "defaultLangRedirect": "lang-path",
+  "currentPagesDir": "pages_",
+  "finalPagesDir": "pages",
+  "localesPath": "content",
+  "pages": {
+    "*": ["common", "global", "contact"],
+    "/": ["home"]
+  }
+}

@@ -1,0 +1,24 @@
+---
+label: Hero
+hide_body: true
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
+- name: illustration
+  type: include
+  config: {}
+  template: image
+  label: Illustration

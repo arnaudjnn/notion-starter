@@ -1,0 +1,28 @@
+---
+label: Page
+hide_body: true
+display_field: slug
+fields:
+- name: slug
+  type: text
+  config:
+    required: false
+  label: Slug
+- name: meta
+  type: include
+  config: {}
+  template: meta
+  label: Meta
+- name: sections
+  type: blocks
+  label: Sections
+  template_types:
+  - hero
+  - contact-section
+  - articles-grid
+  config:
+    min: 
+    max: 
+pages:
+- content/en/blog.json
+- content/fr/blog.json

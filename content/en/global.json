@@ -1,0 +1,66 @@
+{
+  "footer": {
+    "headline": "English lorem ipsum dolor sit amet, consectetur adipiscing elit. A faucibus eget vel laoreet. Neque gravida velit felis odio id mauris. In sed turpis id felis augue quisque purus. Integer vulputate eget adipiscing purus.",
+    "categories": [
+      {
+        "title": "Services",
+        "links": [
+          {
+            "text": "Home",
+            "url": "/home",
+            "targetBlank": false
+          },
+          {
+            "text": "Blog",
+            "url": "/blog",
+            "targetBlank": false
+          },
+          {
+            "text": "Contact us",
+            "url": "/contact",
+            "targetBlank": false
+          }
+        ]
+      },
+      {
+        "title": "More Services",
+        "links": [
+          {
+            "text": "Other Home",
+            "url": "/home",
+            "targetBlank": false
+          },
+          {
+            "text": "Other Blog",
+            "url": "/blog",
+            "targetBlank": false
+          },
+          {
+            "text": "Other Contact us",
+            "url": "/contact",
+            "targetBlank": false
+          }
+        ]
+      }
+    ]
+  },
+  "header": {
+    "links": [
+      {
+        "text": "Home",
+        "url": "/",
+        "targetBlank": false
+      },
+      {
+        "text": "Blog",
+        "url": "/blog",
+        "targetBlank": false
+      },
+      {
+        "text": "Contact us",
+        "url": "/contact",
+        "targetBlank": false
+      }
+    ]
+  }
+}

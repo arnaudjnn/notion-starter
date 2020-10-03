@@ -1,0 +1,22 @@
+{
+  "contact": {
+    "email": "support@angulaire.io",
+    "websiteUrl": "https://angulaire.io",
+    "address": "Angulaire\n\n28 rue Feydeau\n\n75002, Paris",
+    "phone": "+336 75 75 75 75",
+    "socials": [
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/company/angulaire/"
+      },
+      {
+        "url": "https://twitter.com/angulaireHQ",
+        "network": "Twitter"
+      },
+      {
+        "network": "Facebook",
+        "url": "https://www.facebook.com/angulaireHQ"
+      }
+    ]
+  }
+}

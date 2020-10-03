@@ -1,0 +1,61 @@
+---
+label: Global
+hide_body: true
+fields:
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: links
+    type: field_group_list
+    fields:
+    - name: link
+      type: include
+      config: {}
+      template: link
+      label: Link
+    config:
+      min: 
+      max: 
+      labelField: text
+    label: Links
+  label: Header
+- name: footer
+  type: field_group
+  config: {}
+  fields:
+  - name: headline
+    type: text
+    config:
+      required: false
+    label: Headline
+  - name: categories
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Title
+    - name: links
+      type: field_group_list
+      fields:
+      - name: link
+        type: include
+        config: {}
+        template: link
+        label: Link
+      config:
+        min: 
+        max: 
+        labelField: text
+      label: Links
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Categories
+  label: Footer
+pages:
+- content/en/global.json
+- content/fr/global.json
