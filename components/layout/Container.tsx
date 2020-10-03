@@ -21,12 +21,9 @@ const styleConfig = {
       top: 0,
       width: '100%',
       height: '80px',
-      transition: '0.8s cubic-bezier(0.2, 0.8, 0.2, 1)'
-    },
-    footer: {
       bg: 'white',
-      zIndex: 'navigation',
-    }
+      boxShadow: 'primary'
+    },
   }
 }
 

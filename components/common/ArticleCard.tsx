@@ -12,7 +12,7 @@ export default function ArticleCard({ article }) {
 
   return (
     <Link href="/blog/[slug]" as={`/blog/${article.slug}`}>
-      <a>
+      <a sx={{ '&:hover': { opacity: 1 }}}>
         <Card as="article" size="defaultP0" variant="animated" minHeight="sm">
           <figure>
             <Image

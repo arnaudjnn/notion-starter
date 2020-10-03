@@ -1,11 +1,10 @@
 /** @jsx jsx */
 import { jsx } from '@chakra-ui/system';
 import { Grid, Flex, List, ListItem } from '@chakra-ui/core';
-import { useState, useEffect } from 'react';
 import { Media } from 'components/layout/Media';
 import { Container } from 'components/layout/Container';
 import { Button } from 'components/common/Button';
-import { Angulaire } from 'components/common/Logo';
+import { Wooclap } from 'components/common/Logo';
 import Link from 'next-translate/Link';
 import LangSelect from 'components/common/LangSelect';
 import MobileMenu from 'components/layout/MobileMenu';
@@ -21,29 +20,15 @@ type HeaderProps = {
 }
 
 export default function Header({ menu }: HeaderProps) {
-  const [scrollTop, setScrollTop] = useState(0);
-  const Logo = Angulaire
-
-  useEffect(() => {
-    const onScroll = e => {
-      setScrollTop(e.target.documentElement.scrollTop);
-    };
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollTop]);
+  const Logo = Wooclap
     
   return (
     <Container 
       as="header" 
       variant="header" 
       size="largePY0"
-      sx={{
-        bg: scrollTop > 20 ? 'white' : 'transparent',
-        backdropFilter: scrollTop > 20 && 'blur(20px)'
-      }}
     >
-        <Grid gridTemplateColumns={['60% repeat(2, auto)', '1fr 2fr 1fr']} height="100%">
+        <Grid gridTemplateColumns={['60% repeat(2, auto)', '1fr auto auto']} height="100%">
         <Flex alignItems="center" justifyContent="flex-start">
           <Link href="/">
             <a>
@@ -51,21 +36,27 @@ export default function Header({ menu }: HeaderProps) {
             </a>
           </Link>
         </Flex>
-        <Flex alignItems="center" justifyContent="center">
+        <Flex alignItems="center" justifyContent="flex-end">
           <Media greaterThan="xs">
-            <List display="flex">
-              {menu.links.map(link => (
-                <ListItem key={link.url}>
-                  <Link href={link.url}>
-                    <Button variant="link">{link.text}</Button>
-                  </Link>
-                </ListItem>
-              ))}
-            </List>
+            <nav>
+              <List display="flex">
+                {menu.links.map(link => (
+                  <ListItem key={link.url}>
+                    <Link href={link.url}>
+                      <Button variant="link">{link.text}</Button>
+                    </Link>
+                  </ListItem>
+                ))}
+              </List>
+            </nav>
           </Media>
         </Flex>
         <Flex alignItems="center" justifyContent="flex-end">
-          <LangSelect />
+          <Media greaterThan="xs" sx={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center'}}>
+            <Button variant="outline" mr="3">Login</Button>
+            <Button mr="3">Signup</Button>
+            <LangSelect />
+          </Media>
           <Media at="xs">
             <MobileMenu logo={<Logo />} links={menu.links}/>
           </Media>

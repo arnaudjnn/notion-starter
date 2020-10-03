@@ -1,35 +1,41 @@
 const textStyles =  {
   h1: {
+    fontFamily: 'heading',
     fontSize: ['4xl', '5xl'],
     fontWeight: 'bold',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
   h2: {
+    fontFamily: 'heading',
     fontSize: ['3xl', '4xl'],
     fontWeight: 'semibold',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
   h3: {
+    fontFamily: 'heading',
     fontSize: ['2xl', '3xl'],
     fontWeight: 'semibold',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
   h4: {
+    fontFamily: 'heading',
     fontSize: ['xl', '2xl'],
     fontWeight: 'semibold',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
   h5: {
+    fontFamily: 'heading',
     fontSize: ['lg', 'xl'],
     fontWeight: 'semibold',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
   h6: {
+    fontFamily: 'heading',
     fontSize: ['md', 'lg'],
     fontWeight: 'semibold',
     lineHeight: '110%',
@@ -40,20 +46,24 @@ const textStyles =  {
     cursor: 'pointer',
     transition: 'all .2s ease',
     '&:hover': {
-      color: 'black'
+      opacity: .6
     }
   }
 }
 
 export default {
   colors: {
-    grey: '#FAFAFA',
-    primary: '#07C',
-    secondary: '#30C'
+    primary: '#156AFF',
+    primaryGradient: 'linear-gradient(180deg,#2da3ff 0%,#146aff 100%)',
+    secondary: '#1D254F',
+    grey: {
+      100: '#E7EBF0',
+      200: '#FAFAFA'
+    }
   },
   fonts: {
     body: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'inherit',
+    heading: 'Nunito, sans-serif',
   },
   fontSizes: {
     xs: "12px",
@@ -90,12 +100,12 @@ export default {
     widest: "0.1em",
   },
   shadows :{
-    primary: '0 5px 10px rgba(0,0,0,.12)',
+    primary: '0 15px 45px 0 rgba(0,0,0,.1)',
     primaryHover: '0 8px 30px rgba(0,0,0,.12)',
     outline: 'transparent'
   },
   radii: {
-    default: '5px',
+    default: '28px',
     full: '100px'
   },
   sizes: {
@@ -139,28 +149,24 @@ export default {
     modal: 10
   },
   textStyles,
+  layerStyles: {
+    blue: {
+      background: 'primaryGradient',
+      color: 'white',
+      a: {
+        color: 'white',
+      }
+    },
+  },
   styles: {
     global: {
       ...textStyles,
       'html, body': {
         fontSize: 'md',
-        bg: 'grey',
+        bg: 'grey.200',
         lineHeight: 'tall',
+        fontFamily: 'body'
       },
-      'h1, h2, h3, h4, h5, h6': {
-        fontFamily: 'heading',
-        fontWeight: 'heading',
-        lineHeight: 'heading',
-        color: 'black'
-      },
-      a: {
-        color: '#333',
-        cursor: 'pointer',
-        transition: 'all .2s ease',
-        '&:hover': {
-          color: 'black'
-        }
-      }
     }
   }
 }

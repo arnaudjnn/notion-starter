@@ -2,9 +2,10 @@ import { Box, useStyleConfig } from '@chakra-ui/core';
 
 const styleConfig = {
   baseStyle: {
+    fontFamily: 'heading',
     borderRadius: 'default',
     fontWeight: 'bold',
-    transition: 'all 0.2s'
+    transition: 'all 0.2s',
   },
   sizes: {
     default: {
@@ -24,17 +25,29 @@ const styleConfig = {
   },
   variants: {
     primary: {
-      bg: 'black',
-      color: 'white'
+      backgroundClip: 'padding-box',
+      backgroundImage: 'linear-gradient(180deg,#2da3ff 0%,#146aff 100%)',
+      color: 'white',
+      border: '2px solid',
+      borderColor: 'transparent',
+      '&:hover': {
+        background: 'transparent',
+        color: 'primary',
+        borderColor: 'primary'
+      }
     },
     outline: {
-      border: '1px solid'
+      border: '2px solid',
+      borderColor: 'grey.100',
+      '&:hover': {
+        borderColor: 'secondary'
+      }
     },
     link: {
-      color: 'black',
+      color: 'secondary',
       transition: 'all .2s ease',
       '&:hover': {
-        opacity: .6
+        color: 'primary'
       }
     }
   },

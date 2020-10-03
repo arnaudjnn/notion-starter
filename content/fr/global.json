@@ -19,44 +19,44 @@
     ]
   },
   "footer": {
-    "headline": "French lorem ipsum dolor sit amet, consectetur adipiscing elit. A faucibus eget vel laoreet. Neque gravida velit felis odio id mauris. In sed turpis id felis augue quisque purus. Integer vulputate eget adipiscing purus.",
+    "headline": "Rendez vos cours ludiques et interactifs",
     "categories": [
       {
-        "title": "Services",
+        "title": "Fonctionnalités",
         "links": [
           {
-            "text": "Accueil",
+            "text": "Nuage de mots",
             "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Blog",
-            "url": "/blog",
+            "text": "Quiz",
+            "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Contactez-nous",
-            "url": "/contact",
+            "text": "Sondage",
+            "url": "/",
             "targetBlank": false
           }
         ]
       },
       {
-        "title": "Autres Services",
+        "title": "Intégrations",
         "links": [
           {
-            "text": "Autre Accueil",
-            "url": "/home",
+            "text": "Moodle",
+            "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Autre Blog",
-            "url": "/blog",
+            "text": "Microsoft Teams",
+            "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Autre Contactez-nous",
-            "url": "/contact",
+            "text": "PowerPoint",
+            "url": "/",
             "targetBlank": false
           }
         ]

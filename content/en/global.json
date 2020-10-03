@@ -1,43 +1,43 @@
 {
   "footer": {
-    "headline": "English lorem ipsum dolor sit amet, consectetur adipiscing elit. A faucibus eget vel laoreet. Neque gravida velit felis odio id mauris. In sed turpis id felis augue quisque purus. Integer vulputate eget adipiscing purus.",
+    "headline": "Make learning awesome and effective",
     "categories": [
       {
-        "title": "Services",
+        "title": "Features",
         "links": [
           {
-            "text": "Home",
-            "url": "/home",
+            "text": "World cloud",
+            "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Blog",
-            "url": "/blog",
+            "text": "Quiz",
+            "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Contact us",
-            "url": "/contact",
+            "text": "Live poll",
+            "url": "/",
             "targetBlank": false
           }
         ]
       },
       {
-        "title": "More Services",
+        "title": "Integrations",
         "links": [
           {
-            "text": "Other Home",
-            "url": "/home",
+            "text": "Moodle",
+            "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Other Blog",
-            "url": "/blog",
+            "text": "Microsoft Teams",
+            "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Other Contact us",
-            "url": "/contact",
+            "text": "PowerPoint",
+            "url": "/",
             "targetBlank": false
           }
         ]
