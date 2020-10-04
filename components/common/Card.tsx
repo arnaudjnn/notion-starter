@@ -13,6 +13,7 @@ const styleConfig = {
       boxShadow: 'primary',
     },
     animated: {
+      boxShadow: 'primary',
       _hover: {
         boxShadow: 'primaryHover',
         transform: 'translateY(-3px)'

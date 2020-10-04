@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { getAllArticles, getArticleBySlug } from 'lib/api';
+import { getAllArticles, getArticleBySlug } from 'lib/notion';
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Layout from 'components/layout/Layout';
@@ -82,7 +82,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     params: { slug: [page.slug] }
   }))
 
-  const articles = await getAllArticles('en', ['slug'])
+  const articles = await getAllArticles()
   const articlePaths = articles.map(article => ({
     params: { slug: [ 'blog', article.slug ]}
   }))
@@ -100,19 +100,7 @@ export const getStaticProps: GetStaticProps = async (ctx: any) => {
   let pageData = null
   let globalData = null
   if(slugArray.length > 1 && firstSlug === "blog") {
-    const article = getArticleBySlug(
-      lang,
-      lastSlug, 
-      [
-        'title',
-        'date',
-        'slug',
-        'content',
-        'coverImage',
-        'category',
-        'author'
-      ]
-    )
+    const article = await getArticleBySlug(lang, lastSlug)
     pageData = {
       metadata: {
         metaTitle: "metaTitle from CMS",
@@ -126,19 +114,8 @@ export const getStaticProps: GetStaticProps = async (ctx: any) => {
       ]
     }
   } else if(slugArray.length === 1 && firstSlug === "blog") {
-    const articles = getAllArticles(
-      lang,
-      [
-        'title',
-        'description',
-        'coverImage',
-        'slug',
-        'content',
-        'date',
-        'category',
-        'author'
-      ]
-    )
+    const articles = await getAllArticles(lang)
+
     pageData = {
       metadata: {
         metaTitle: "metaTitle from CMS",

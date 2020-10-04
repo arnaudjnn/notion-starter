@@ -1,13 +1,14 @@
 /** @jsx jsx */
 import { jsx } from '@chakra-ui/system';
 import { Flex, Heading, Text } from '@chakra-ui/core';
-import ReactMarkdown from 'react-markdown';
+import { NotionRenderer, BlockMapType } from 'react-notion';
 import useTranslation from 'next-translate/useTranslation';
 import { Container } from 'components/layout/Container';
 
-export default function Article({ title, category, date, content, coverImage }) {
+export default function Article({ title, category, date, content }) {
   const { t, lang } = useTranslation()
-  const localeDate = new Intl.DateTimeFormat(lang).format(new Date(date))
+  const options = { year: 'numeric', month: 'long', day: 'numeric' }
+  const localeDate = new Intl.DateTimeFormat(lang, options).format(new Date(date))
 
   return (
     <Container as="article" size="default">
@@ -20,13 +21,7 @@ export default function Article({ title, category, date, content, coverImage }) 
         </Flex>
       </div>
       <Heading as="h1" my={[10, 20]}>{title}</Heading>
-      <figure>
-        <img 
-          src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_auto:100,dpr_auto/${coverImage}`} 
-          alt={`Cover Image for ${title}`}
-        />
-      </figure>
-      <ReactMarkdown sx={{ mt: 10 }} source={content} />
+      <NotionRenderer blockMap={content} />
     </Container>
   )
 }

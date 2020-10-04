@@ -2,42 +2,42 @@ const textStyles =  {
   h1: {
     fontFamily: 'heading',
     fontSize: ['4xl', '5xl'],
-    fontWeight: 'bold',
+    fontWeight: 'black',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
   h2: {
     fontFamily: 'heading',
     fontSize: ['3xl', '4xl'],
-    fontWeight: 'semibold',
+    fontWeight: 'black',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
   h3: {
     fontFamily: 'heading',
     fontSize: ['2xl', '3xl'],
-    fontWeight: 'semibold',
+    fontWeight: 'black',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
   h4: {
     fontFamily: 'heading',
     fontSize: ['xl', '2xl'],
-    fontWeight: 'semibold',
+    fontWeight: 'black',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
   h5: {
     fontFamily: 'heading',
     fontSize: ['lg', 'xl'],
-    fontWeight: 'semibold',
+    fontWeight: 'black',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
   h6: {
     fontFamily: 'heading',
     fontSize: ['md', 'lg'],
-    fontWeight: 'semibold',
+    fontWeight: 'black',
     lineHeight: '110%',
     letterSpacing: '-2%',
   },
@@ -58,7 +58,8 @@ export default {
     secondary: '#1D254F',
     grey: {
       100: '#E7EBF0',
-      200: '#FAFAFA'
+      200: '#FAFAFA',
+      300: '#8A8AA3'
     }
   },
   fonts: {
@@ -81,6 +82,7 @@ export default {
     normal: 400,
     medium: 500,
     bold: 700,
+    black: 900
   },
   lineHeights: {
     normal: "normal",
