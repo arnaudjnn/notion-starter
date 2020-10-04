@@ -6,9 +6,11 @@
   "sections": [
     {
       "template": "hero",
-      "title": "Créez rapidement des sites incroyables",
-      "image": "/v1594654974/build_yvxj3b.png",
-      "alt": "Personnes grimpant à une échelle"
+      "title": "Rendez vos cours ludiques et interactifs",
+      "description": "Plutôt que de combattre les smartphones, Wooclap les transforme en un outil d'apprentissage exceptionnel.",
+      "button": {
+        "text": "Essayer gratuitement"
+      }
     }
   ]
 }

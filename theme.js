@@ -1,7 +1,7 @@
-const textStyles =  {
+const defaultTextStyles =  {
   h1: {
     fontFamily: 'heading',
-    fontSize: ['4xl', '5xl'],
+    fontSize: ['4xl', '6xl'],
     fontWeight: 'black',
     lineHeight: '110%',
     letterSpacing: '-2%',
@@ -51,6 +51,18 @@ const textStyles =  {
   }
 }
 
+const textStyles = {
+  ...defaultTextStyles,
+  heroTitle: {
+    fontFamily: 'heading',
+    fontSize: ['5xl', '7xl'],
+    fontWeight: 'black',
+    lineHeight: '110%',
+    letterSpacing: '-2%',
+    color: 'secondary'
+  }
+}
+
 export default {
   colors: {
     primary: '#156AFF',
@@ -77,6 +89,7 @@ export default {
     "4xl": "36px",
     "5xl": "48px",
     "6xl": "64px",
+    "7xl": "72px"
   },
   fontWeights: {
     normal: 400,
@@ -162,7 +175,7 @@ export default {
   },
   styles: {
     global: {
-      ...textStyles,
+      ...defaultTextStyles,
       'html, body': {
         fontSize: 'md',
         bg: 'grey.200',

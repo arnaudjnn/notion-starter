@@ -4,7 +4,11 @@
   "sections": [
     {
       "template": "hero",
-      "title": "Quickstart awesome websites"
+      "title": "Make learning awesome & effective",
+      "description": "Rather than fighting smartphones, Wooclap turns them into an exceptional learning tool.",
+      "button": {
+        "text": "Sign up for free"
+      }
     }
   ]
 }

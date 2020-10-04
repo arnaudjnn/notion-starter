@@ -13,11 +13,9 @@ import useTranslation from 'next-translate/useTranslation';
 export default function DynamicPage({ globalData, pageData }) {
   const router = useRouter()
 
-  // Use globalData when translations come from CMS
+  // Use globalData from CMS instead
   const { t } = useTranslation()
-  const menu = {
-    links: t('global:header.links', {}, { returnObjects: true })
-  }
+  const menu = { links: t('global:header.links', {}, { returnObjects: true })}
 
   if (!router.isFallback && !pageData?.sections.length) {
     return <ErrorPage statusCode={404} />;
@@ -38,8 +36,8 @@ export default function DynamicPage({ globalData, pageData }) {
             <Hero 
               key={section.template}
               title={section.title}
-              image={section.image}
-              alt={section.alt}
+              description={section.description}
+              button={section.button}
             />
           )
         }
@@ -118,7 +116,7 @@ export const getStaticProps: GetStaticProps = async (ctx: any) => {
 
     pageData = {
       metadata: {
-        metaTitle: "metaTitle from CMS",
+        metaTitle: "Blog",
         metaDescription: "metaDescription from CMS"
       },
       sections: [
@@ -131,7 +129,7 @@ export const getStaticProps: GetStaticProps = async (ctx: any) => {
   } else if(firstSlug === "contact") {
     pageData = {
       metadata: {
-        metaTitle: "metaTitle from CMS",
+        metaTitle: "Contact",
         metaDescription: "metaDescription from CMS"
       },
       sections: [

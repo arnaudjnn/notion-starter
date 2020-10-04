@@ -6,25 +6,24 @@ import useTranslation from 'next-translate/useTranslation';
 
 export default function Homepage({ globalData, pageData }) {
 
-  // Use globalData when translations come from CMS
+  // Use globalData from CMS instead
   const { t } = useTranslation()
-  const menu = {
-    links: t('global:header.links', {}, { returnObjects: true })
-  }
+  const menu = { links: t('global:header.links', {}, { returnObjects: true })}
+  const sections = t('home:sections', {}, { returnObjects: true })
 
   return (
     <Layout 
       metadata={pageData.metadata}
       header={<Header menu={menu}/>}
     >
-      {pageData.sections.map(section => {
+      {sections.map(section => {
         if (section.template === 'hero'){
           return (
             <Hero 
               key={section.template}
               title={section.title}
-              image={section.image}
-              alt={section.alt}
+              description={section.description}
+              button={section.button}
             />
           )
         }
@@ -39,13 +38,13 @@ export const getStaticProps: GetStaticProps = async () => {
   let globalData = null
   pageData = {
     metadata: {
-      metaTitle: "metaTitle from CMS",
-      metaDescription: "metaDescription from CMS"
+      metaTitle: "Wooclap - An interactive platform that makes learning awesome",
+      metaDescription: "A collaborative platform for your classes, conferences and training sessions. Intuitive and simple, Wooclap makes your presentations interactive."
     },
     sections: [
       {
         template: 'hero',
-        title: "Quickstart awesome websites"
+        title: "Title from CMS"
       }
     ]
   }
