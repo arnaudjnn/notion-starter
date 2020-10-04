@@ -13,6 +13,10 @@ const styleConfig = {
     largePY0: {
       px: [5, 20]
     },
+    center: {
+      py: [8, 8],
+      px: [5, 56]
+    }
   },
   variants: {
     header: {

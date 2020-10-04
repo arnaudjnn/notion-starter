@@ -93,26 +93,6 @@ export default function Contact() {
               {errors.email && errors.email.type === "pattern" && "Please enter a valid email"}
             </FormErrorMessage>
           </FormControl>
-          <FormControl isInvalid={errors.employeesNumber}>
-            <FormLabel htmlFor="employeesNumber">Number of Employees</FormLabel>
-            <Controller
-              name="employeesNumber"
-              as={Select}
-              options={[
-                { value: '1', label: 'Solopreneur' },
-                { value: '1-10', label: '1-10' },
-                { value: '10-100', label: '10-100' },
-                { value: '100-1000', label: '100-1000' },
-                { value: 'More than 1000', label: '1000+' }
-              ]}
-              control={control}
-              rules={{ required: true }}
-              isSearchable={false}
-            />
-            <FormErrorMessage>
-              {errors.employeesNumber && "Please enter your organization employees number"}
-            </FormErrorMessage>
-          </FormControl>
           <FormControl isInvalid={errors.phone}>
             <FormLabel htmlFor="phone">Phone</FormLabel>
             <Input

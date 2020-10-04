@@ -1,21 +1,21 @@
 {
   "contact": {
-    "email": "support@angulaire.io",
-    "websiteUrl": "https://angulaire.io",
-    "address": "Angulaire\n\n28 rue Feydeau\n\n75002, Paris",
+    "email": "support@wooclap.com",
+    "websiteUrl": "https://wooclap.com",
+    "address": "Wooclap\n\nRue des Pères Blancs\n\n4 1040, Etterbeek, Belgique",
     "phone": "+336 75 75 75 75",
     "socials": [
       {
         "network": "LinkedIn",
-        "url": "https://www.linkedin.com/company/angulaire/"
+        "url": "https://www.linkedin.com/company/wooclapfr/"
       },
       {
-        "url": "https://twitter.com/angulaireHQ",
+        "url": "https://twitter.com/wooclap",
         "network": "Twitter"
       },
       {
         "network": "Facebook",
-        "url": "https://www.facebook.com/angulaireHQ"
+        "url": "https://www.facebook.com/wooclapfr"
       }
     ]
   }

@@ -5,6 +5,7 @@ import { Wooclap } from 'components/common/Logo';
 import { Container }from 'components/layout/Container';
 import Link from 'next-translate/Link';
 import { AiFillFacebook, AiFillTwitterSquare, AiFillLinkedin } from 'react-icons/ai';
+import { Button } from 'components/common/Button';
 import useTranslation from 'next-translate/useTranslation';
 import siteConfig from 'siteconfig.json';
 
@@ -48,9 +49,11 @@ export default function Footer() {
           {siteConfig.contact.socials.map((social, i) => {
             const Logo = logos[social.network]
             return (
-              <ListItem key={i}>
+              <ListItem key={i} mr="3">
                 <a href={social.url} target="_blank" rel="nofollow">
-                  <Logo fontSize="24px"/>
+                  <Button variant="socials" size="small">
+                    <Logo fontSize="24px"/>
+                  </Button>
                 </a>
               </ListItem>
             )

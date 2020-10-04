@@ -4,7 +4,7 @@ const styleConfig = {
   baseStyle: {
     fontFamily: 'heading',
     borderRadius: 'default',
-    fontWeight: 'bold',
+    fontWeight: 'black',
     transition: 'all 0.2s',
   },
   sizes: {
@@ -13,7 +13,7 @@ const styleConfig = {
       py: '10px'
     },
     small: {
-      px: '18px',
+      px: '12px',
       py: '12px',
       fontSize: 'sm'
     },
@@ -48,6 +48,14 @@ const styleConfig = {
       transition: 'all .2s ease',
       '&:hover': {
         color: 'primary'
+      }
+    },
+    socials: {
+      color: 'white',
+      border: '2px solid',
+      opacity: .4,
+      '&:hover': {
+        opacity: .3
       }
     }
   },

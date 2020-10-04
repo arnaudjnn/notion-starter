@@ -147,8 +147,8 @@ export default {
     "64": "16rem",
   },
   zIndices: {
-    navigation: 1,
-    modal: 10
+    navigation: 10,
+    modal: 100
   },
   textStyles,
   layerStyles: {
