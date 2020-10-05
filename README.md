@@ -9,7 +9,7 @@ This starter is designed for flexibility. Using it, you'll be able to manage you
 This blog features:
 
 - Articles creation within Notion, no code necessary
-- Fully flexible page structure: use Notion block listed here.
+- Fully flexible page structure: use Notion blocks [listed here](https://github.com/splitbee/react-notion#supported-blocks).
 - 2 UI Sections out of the box: Hero, Contact.
 - Easy to theme with [Chakra](https://next.chakra-ui.com/)
 - Static site generation and [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration) with Next
@@ -17,3 +17,57 @@ This blog features:
 ## Prerequisites
 
 [Yarn](https://yarnpkg.com/en/) or [NPM](https://nodejs.org/)
+
+## Getting started
+
+The easiest way to try this starter is to run it locally on your computer.
+
+Install dependencies and run your server:
+
+```bash
+# Using yarn
+yarn install
+yarn develop
+
+# Using npm
+npm install
+npm run develop
+```
+
+The Next.js server will run here => [http://localhost:3000](http://localhost:3000)
+
+## Adding Articles
+
+1. Go to the Notion blog index page: [Blog](https://www.notion.so/arnaudjnn/d0aa40bcd23249c7a772aeaea62abdd0?v=f5d37922782e44fbaa232836e99456df)
+2. Add a new line in the table and use ```Open as a page``` as follow:
+![OPEN AS A PAGE](public/open-as-page.png)
+3. Write content using Notion awesome experience, automatically saved. Don't forget to fill all the attributes in the table. ```published``` check is required to publish the content
+
+### Custom theme
+
+We use Chakra for styling. To modify your page's look, you can edit the theme in `/theme.js`. Read the [Chakra docs](https://next.chakra-ui.com/docs/theming/theme) to view all the changes you can make. For example, you can change the primary color like this:
+
+```jsx
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: colors.green,
+      },
+    },
+  },
+};
+export default {
+  colors: {
+    primary: 'gold',
+    secondary: '#1D254F',
+    grey: {
+      100: '#E7EBF0',
+      200: '#FAFAFA',
+      300: '#8A8AA3'
+    }
+    // ...
+  },
+}
+```
+
