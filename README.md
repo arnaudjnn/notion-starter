@@ -40,7 +40,6 @@ The Next.js server will run here => [http://localhost:3000](http://localhost:300
 
 1. Go to the Notion blog index page: [Blog](https://www.notion.so/arnaudjnn/d0aa40bcd23249c7a772aeaea62abdd0?v=f5d37922782e44fbaa232836e99456df)
 2. Add a new line in the table and use ```Open as a page``` as follow:
-
 ![OPEN AS A PAGE](public/open-as-a-page.png)
 3. Write content using Notion awesome experience, automatically saved. Don't forget to fill all the attributes in the table. ```published``` check is required to publish the content.
 4. To create a CTA. Add the followng code in your article where you want to display it:
