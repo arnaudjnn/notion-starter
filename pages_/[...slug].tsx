@@ -101,8 +101,8 @@ export const getStaticProps: GetStaticProps = async (ctx: any) => {
     const article = await getArticleBySlug(lang, lastSlug)
     pageData = {
       metadata: {
-        metaTitle: "metaTitle from CMS",
-        metaDescription: "metaDescription from CMS"
+        metaTitle: article.title,
+        metaDescription: article.description
       },
       sections: [
         {
