@@ -42,8 +42,10 @@ The Next.js server will run here => [http://localhost:3000](http://localhost:300
 2. Add a new line in the table and use ```Open as a page``` as follow:
 ![OPEN AS A PAGE](public/open-as-page.png)
 3. Write content using Notion awesome experience, automatically saved. Don't forget to fill all the attributes in the table. ```published``` check is required to publish the content.
-4. To create a CTA. Add the followng code:
+4. To create a CTA. Add the followng code in your article where you want to display it:
 ```{{ <Button href="/contact" variant="primary">Contact us<Button/>}}```
+
+> 💡 Withe Next.js Incremental Static Regeneration awesome new feature, you get the best of the both worlds and you don't need to rebuild and wait the build time.
 
 ## Custom theme
 

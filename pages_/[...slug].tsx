@@ -150,6 +150,7 @@ export const getStaticProps: GetStaticProps = async (ctx: any) => {
     props: {
       globalData,
       pageData
-    }
+    },
+    revalidate: 1
   }
 }

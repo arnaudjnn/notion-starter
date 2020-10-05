@@ -20,9 +20,10 @@ export default function Select({ ...rest }) {
       border: 'none',
       boxShadow: 'none',
       minHeight: 'none',
-      backgroundColor: theme.colors.accent2,
+      backgroundColor: 'transparent',
       borderRadius: '20px',
       padding: '0 8px',
+      fontWeight: 'bold',
     }),
     valueContainer: base => ({
       ...base,
@@ -45,7 +46,7 @@ export default function Select({ ...rest }) {
     }),
     menu: (base, state) => ({
       ...base,
-      color: theme.colors.accent5,
+      color: 'black',
       background: 'white',
       textAlign: 'left'
     }),
@@ -53,8 +54,9 @@ export default function Select({ ...rest }) {
       ...base,
       cursor: 'pointer',
       fontSize: theme.fontSizes.sm,
-      color: state.isSelected ? theme.colors.text : theme.colors.accent5,
-      background: state.isSelected ? theme.colors.redTransparent : 'transparent',
+      fontWeight: 'bold',
+      color: state.isSelected ? 'white' : 'black',
+      background: state.isSelected ? theme.colors.primary : 'transparent',
     })
   };
 
