@@ -41,22 +41,15 @@ The Next.js server will run here => [http://localhost:3000](http://localhost:300
 1. Go to the Notion blog index page: [Blog](https://www.notion.so/arnaudjnn/d0aa40bcd23249c7a772aeaea62abdd0?v=f5d37922782e44fbaa232836e99456df)
 2. Add a new line in the table and use ```Open as a page``` as follow:
 ![OPEN AS A PAGE](public/open-as-page.png)
-3. Write content using Notion awesome experience, automatically saved. Don't forget to fill all the attributes in the table. ```published``` check is required to publish the content
+3. Write content using Notion awesome experience, automatically saved. Don't forget to fill all the attributes in the table. ```published``` check is required to publish the content.
+4. To create a CTA. Add the followng code:
+```{{ <Button href="/contact" variant="primary">Contact us<Button/>}}```
 
-### Custom theme
+## Custom theme
 
 We use Chakra for styling. To modify your page's look, you can edit the theme in `/theme.js`. Read the [Chakra docs](https://next.chakra-ui.com/docs/theming/theme) to view all the changes you can make. For example, you can change the primary color like this:
 
 ```jsx
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        primary: colors.green,
-      },
-    },
-  },
-};
 export default {
   colors: {
     primary: 'gold',
@@ -70,4 +63,8 @@ export default {
   },
 }
 ```
+## Deploying to production
 
+[Deploy Next.js](https://nextjs.org/docs/deployment)
+
+Have fun using finally a CMS, you're Marketing team will thank you!
