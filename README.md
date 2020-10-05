@@ -45,7 +45,7 @@ The Next.js server will run here => [http://localhost:3000](http://localhost:300
 4. To create a CTA. Add the followng code in your article where you want to display it:
 ```{{ <Button href="/contact" variant="primary">Contact us<Button/>}}```
 
-> 💡 Withe Next.js Incremental Static Regeneration awesome new feature, you get the best of the both worlds and you don't need to rebuild and wait the build time.
+> 💡 Withe Next.js Incremental Static Regeneration awesome new feature, you get the best of the both worlds: static website without build time! Write you article and you're good to go!
 
 ## Custom theme
 
