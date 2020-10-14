@@ -1,4 +1,4 @@
-# Wooclap Blog
+# Notion Starter Blog
 
 ![HERO](public/hero.png)
 
@@ -10,7 +10,7 @@ This blog features:
 
 - Articles creation within Notion, no code necessary
 - Fully flexible page structure: use Notion blocks [listed here](https://github.com/splitbee/react-notion#supported-blocks).
-- 2 UI Sections out of the box: Hero, Contact.
+- 3 UI Sections out of the box: Hero, Blog index and Blog read.
 - Easy to theme with [Chakra](https://next.chakra-ui.com/)
 - Static site generation and [Incremental Static Regeneration](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration) with Next
 
@@ -43,7 +43,7 @@ The Next.js server will run here => [http://localhost:3000](http://localhost:300
 ![OPEN AS A PAGE](public/open-as-a-page.png)
 3. Write content using Notion awesome experience, automatically saved. Don't forget to fill all the attributes in the table. ```published``` check is required to publish the content.
 4. To create a CTA. Add the followng code in your article where you want to display it:
-```{{ <Button href="/contact" variant="primary">Contact us<Button/>}}```
+```{{ <Button href="/my-link" variant="primary">Contact us<Button/>}}```
 
 > 💡 With Next.js Incremental Static Regeneration awesome new feature, you get the best of the both worlds: static website without build time! Write you article and you're good to go!
 
@@ -69,4 +69,4 @@ export default {
 
 [Deploy Next.js](https://nextjs.org/docs/deployment)
 
-Have fun using finally a CMS, you're Marketing team will thank you!
+Have fun using Notion as a Healdess CMS, you're Marketing team will thank you!

@@ -4,10 +4,10 @@
   "sections": [
     {
       "template": "hero",
-      "title": "Make learning awesome & effective",
-      "description": "Rather than fighting smartphones, Wooclap turns them into an exceptional learning tool.",
+      "title": "Empower your marketing teams",
+      "description": "We build products close to our hearts, and put everything we’ve got into them, so the final products we deliver speak for themselves.",
       "button": {
-        "text": "Sign up for free"
+        "text": "Get started"
       }
     }
   ]

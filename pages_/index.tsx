@@ -38,8 +38,8 @@ export const getStaticProps: GetStaticProps = async () => {
   let globalData = null
   pageData = {
     metadata: {
-      metaTitle: "Wooclap - An interactive platform that makes learning awesome",
-      metaDescription: "A collaborative platform for your classes, conferences and training sessions. Intuitive and simple, Wooclap makes your presentations interactive."
+      "metaTitle": "Angulaire | Our work is serious, we are not",
+      "metaDescription": "We build products close to our hearts, and put everything we’ve got into them, so the final products we deliver speak for themselves.",
     },
     sections: [
       {

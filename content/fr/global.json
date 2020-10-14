@@ -10,53 +10,48 @@
         "text": "Blog",
         "url": "/blog",
         "targetBlank": false
-      },
-      {
-        "text": "Contactez-nous",
-        "url": "/contact",
-        "targetBlank": false
       }
     ]
   },
   "footer": {
-    "headline": "Rendez vos cours ludiques et interactifs",
+    "headline": "Contruisez une incoryable experience de blogging grâce à cette template Notion",
     "categories": [
       {
         "title": "Fonctionnalités",
         "links": [
           {
-            "text": "Nuage de mots",
+            "text": "Multilingue",
             "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Quiz",
+            "text": "Régénération statique progressive",
             "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Sondage",
+            "text": "Headless",
             "url": "/",
             "targetBlank": false
           }
         ]
       },
       {
-        "title": "Intégrations",
+        "title": "Tools",
         "links": [
           {
-            "text": "Moodle",
-            "url": "/",
+            "text": "Notion",
+            "url": "https://www.notion.so/",
             "targetBlank": false
           },
           {
-            "text": "Microsoft Teams",
-            "url": "/",
+            "text": "Next.js",
+            "url": "https://nextjs.org/",
             "targetBlank": false
           },
           {
-            "text": "PowerPoint",
-            "url": "/",
+            "text": "Chakra",
+            "url": "https://next.chakra-ui.com/",
             "targetBlank": false
           }
         ]

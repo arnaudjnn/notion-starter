@@ -1,21 +1,17 @@
 {
   "contact": {
-    "email": "support@wooclap.com",
-    "websiteUrl": "https://wooclap.com",
-    "address": "Wooclap\n\nRue des Pères Blancs\n\n4 1040, Etterbeek, Belgique",
-    "phone": "+336 75 75 75 75",
     "socials": [
       {
         "network": "LinkedIn",
-        "url": "https://www.linkedin.com/company/wooclapfr/"
+        "url": "https://www.linkedin.com/company/angulaire/"
       },
       {
-        "url": "https://twitter.com/wooclap",
+        "url": "https://twitter.com/angulaireHQ",
         "network": "Twitter"
       },
       {
         "network": "Facebook",
-        "url": "https://www.facebook.com/wooclapfr"
+        "url": "https://www.facebook.com/angulaireHQ/"
       }
     ]
   }

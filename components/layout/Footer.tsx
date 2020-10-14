@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@chakra-ui/system';
 import { Grid, Flex, IconButton, Text, List, ListItem } from '@chakra-ui/core';
-import { Wooclap } from 'components/common/Logo';
+import { NotionStarter } from 'components/common/Logo';
 import { Container }from 'components/layout/Container';
 import Link from 'next-translate/Link';
 import { AiFillFacebook, AiFillTwitterSquare, AiFillLinkedin } from 'react-icons/ai';
@@ -20,10 +20,10 @@ export default function Footer() {
 
   return (
     <Container as="footer" size="large" layerStyle="blue">
-      <Grid gridTemplateColumns={['1fr', '3fr 5fr',]} gridGap={[10]} mb={[10, 5]}>
+      <Grid gridTemplateColumns={['1fr', '3fr 5fr',]} gridGap={[10, 20]} mb={[10, 5]}>
         <div>
           <div>
-            <Wooclap width="10rem" fill="white"/>
+            <NotionStarter fill="white"/>
           </div>
           <Text mt="8">{t('global:footer.headline')}</Text>
         </div>

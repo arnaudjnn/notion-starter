@@ -5,7 +5,6 @@ import ErrorPage from 'next/error';
 import Layout from 'components/layout/Layout';
 import Hero from 'components/sections/Hero';
 import Header from 'components/layout/Header';
-import Contact from 'components/sections/Contact';
 import ArticlesGrid from 'components/common/ArticlesGrid';
 import Article from 'components/sections/Article';
 import useTranslation from 'next-translate/useTranslation';
@@ -49,14 +48,6 @@ export default function DynamicPage({ globalData, pageData }) {
             />
           )
         }
-        if (section.template === 'contact-section'){
-          return (
-            <Contact
-              key={section.template}
-              title={section.title}
-            />
-          )
-        }
         if (section.template === 'articles-grid'){
           return (
             <ArticlesGrid 
@@ -73,7 +64,6 @@ export default function DynamicPage({ globalData, pageData }) {
 export const getStaticPaths: GetStaticPaths = async () => {
 
   const pages = [
-    { slug: 'contact' },
     { slug: 'blog' },
   ]
   const pagePaths = pages.map(page => ({
@@ -123,19 +113,6 @@ export const getStaticProps: GetStaticProps = async (ctx: any) => {
         {
           template: 'articles-grid',
           articles
-        }
-      ]
-    }
-  } else if(firstSlug === "contact") {
-    pageData = {
-      metadata: {
-        metaTitle: "Contact",
-        metaDescription: "metaDescription from CMS"
-      },
-      sections: [
-        {
-          template: 'contact-section',
-          title: "Title from CMS"
         }
       ]
     }

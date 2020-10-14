@@ -25,7 +25,6 @@
     "next-translate": "^0.17.1",
     "react": "latest",
     "react-dom": "latest",
-    "react-hook-form": "^6.0.4",
     "react-icons": "^3.10.0",
     "react-markdown": "^4.1.0",
     "react-notion": "^0.8.2",

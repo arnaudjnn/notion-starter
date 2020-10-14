@@ -1,43 +1,43 @@
 {
   "footer": {
-    "headline": "Make learning awesome and effective",
+    "headline": "Notion starter to build awesome blogging experience",
     "categories": [
       {
         "title": "Features",
         "links": [
           {
-            "text": "World cloud",
+            "text": "Multilingual",
             "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Quiz",
+            "text": "Incremental Static Regeneration",
             "url": "/",
             "targetBlank": false
           },
           {
-            "text": "Live poll",
+            "text": "Headless",
             "url": "/",
             "targetBlank": false
           }
         ]
       },
       {
-        "title": "Integrations",
+        "title": "Outils",
         "links": [
           {
-            "text": "Moodle",
-            "url": "/",
+            "text": "Notion",
+            "url": "https://www.notion.so/",
             "targetBlank": false
           },
           {
-            "text": "Microsoft Teams",
-            "url": "/",
+            "text": "Next.js",
+            "url": "https://nextjs.org/",
             "targetBlank": false
           },
           {
-            "text": "PowerPoint",
-            "url": "/",
+            "text": "Chakra",
+            "url": "https://next.chakra-ui.com/",
             "targetBlank": false
           }
         ]
@@ -54,11 +54,6 @@
       {
         "text": "Blog",
         "url": "/blog",
-        "targetBlank": false
-      },
-      {
-        "text": "Contact us",
-        "url": "/contact",
         "targetBlank": false
       }
     ]

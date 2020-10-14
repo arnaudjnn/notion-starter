@@ -4,7 +4,7 @@ import { Grid, Flex, List, ListItem } from '@chakra-ui/core';
 import { Media } from 'components/layout/Media';
 import { Container } from 'components/layout/Container';
 import { Button } from 'components/common/Button';
-import { Wooclap } from 'components/common/Logo';
+import { NotionStarter } from 'components/common/Logo';
 import Link from 'next-translate/Link';
 import LangSelect from 'components/common/LangSelect';
 import MobileMenu from 'components/layout/MobileMenu';
@@ -20,7 +20,7 @@ type HeaderProps = {
 }
 
 export default function Header({ menu }: HeaderProps) {
-  const Logo = Wooclap
+  const Logo = NotionStarter
     
   return (
     <Container 
