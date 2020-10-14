@@ -2,7 +2,7 @@
 
 ![HERO](public/hero.png)
 
-[View the live demo](https://blog-wooclap.vercel.app/en/blog) • [Edit in the CMS](https://www.notion.so/arnaudjnn/d0aa40bcd23249c7a772aeaea62abdd0?v=f5d37922782e44fbaa232836e99456df)
+[View the live demo](https://notion-starter.vercel.app/) • [Edit in the CMS](https://www.notion.so/arnaudjnn/d0aa40bcd23249c7a772aeaea62abdd0?v=f5d37922782e44fbaa232836e99456df)
 
 This starter is designed for flexibility. Using it, you'll be able to manage your blog content entirely in Notion, and get a Next app automatically generated. Marketing teams will be able to create new articles without help from developers.
 

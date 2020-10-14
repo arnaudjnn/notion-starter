@@ -25,7 +25,7 @@
             "targetBlank": false
           },
           {
-            "text": "Régénération statique progressive",
+            "text": "Incremental Static Regeneration",
             "url": "/",
             "targetBlank": false
           },
@@ -37,7 +37,7 @@
         ]
       },
       {
-        "title": "Tools",
+        "title": "Outils",
         "links": [
           {
             "text": "Notion",
